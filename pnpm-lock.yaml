@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@hygraph/app-sdk-react': ^0.0.2
   '@next/font': 13.1.2
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -13,6 +14,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
+  '@hygraph/app-sdk-react': 0.0.2
   '@next/font': 13.1.2
   '@types/node': 18.11.18
   '@types/react': 18.0.27
@@ -50,6 +52,15 @@ packages:
       - supports-color
     dev: false
 
+  /@graphcms/zoid/9.0.64-alpha.3:
+    resolution: {integrity: sha512-dKAArXooK+KsTIzOYwm79FbyE+NIv+dA+mpWj/Xc2P1cnzScRSLcNSU1Fdw/vGCTbSom+ndGzySWxNAvW08Dxw==}
+    dependencies:
+      belter: 1.0.190
+      cross-domain-utils: 2.0.38
+      post-robot: 10.0.46
+      zalgo-promise: 1.0.48
+    dev: false
+
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
     engines: {node: '>=10.10.0'}
@@ -68,6 +79,20 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: false
+
+  /@hygraph/app-sdk-react/0.0.2:
+    resolution: {integrity: sha512-nLMaFF2TiAb/HIMDdCQ8uPYp1Hu9BXn1obcTEpscFutvSueTBI9z4pYP/uSu0HIvRtqHk04lCWcBRXXQYboQIg==}
+    dependencies:
+      '@graphcms/zoid': 9.0.64-alpha.3
+      '@hygraph/app-sdk': 0.0.2
+    dev: false
+
+  /@hygraph/app-sdk/0.0.2:
+    resolution: {integrity: sha512-fCQFU2NNXVJbvHMLPinwwaFzYQhZEJTsT8bZHlviysPQmK/cKdx/1zbwrh3T3HeB0sMhiAxASiPJx1Vv/WxsRQ==}
+    dependencies:
+      '@graphcms/zoid': 9.0.64-alpha.3
+      final-form: 4.20.6
     dev: false
 
   /@next/env/13.1.2:
@@ -451,6 +476,14 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
 
+  /belter/1.0.190:
+    resolution: {integrity: sha512-jz05FHrO+bwitdI6JxV5ESyRdVhTcwMWQ7L4o+q/R4LNJFQrG58sp9EiwsSjhbihhiyYFcmmCMRRagxte6igtw==}
+    dependencies:
+      cross-domain-safe-weakmap: 1.0.29
+      cross-domain-utils: 2.0.38
+      zalgo-promise: 1.0.48
+    dev: false
+
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
@@ -506,6 +539,18 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    dev: false
+
+  /cross-domain-safe-weakmap/1.0.29:
+    resolution: {integrity: sha512-VLoUgf2SXnf3+na8NfeUFV59TRZkIJqCIATaMdbhccgtnTlSnHXkyTRwokngEGYdQXx8JbHT9GDYitgR2sdjuA==}
+    dependencies:
+      cross-domain-utils: 2.0.38
+    dev: false
+
+  /cross-domain-utils/2.0.38:
+    resolution: {integrity: sha512-zZfi3+2EIR9l4chrEiXI2xFleyacsJf8YMLR1eJ0Veb5FTMXeJ3DpxDjZkto2FhL/g717WSELqbptNSo85UJDw==}
+    dependencies:
+      zalgo-promise: 1.0.48
     dev: false
 
   /cross-spawn/7.0.3:
@@ -1028,6 +1073,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
+    dev: false
+
+  /final-form/4.20.6:
+    resolution: {integrity: sha512-fCdwIj49KOaFfDRlXB57Eo+GghIMZQWrA9TakQI3C9uQxHwaFHXqZSNRlUdfnQmNNeySwGOaGPZCvjy58hyv4w==}
+    dependencies:
+      '@babel/runtime': 7.20.7
     dev: false
 
   /find-up/5.0.0:
@@ -1750,6 +1801,16 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
+  /post-robot/10.0.46:
+    resolution: {integrity: sha512-EgVJiuvI4iRWDZvzObWes0X/n8olWBEJWxlSw79zmhpgkigX8UsVL4VOBhVtoJKwf0Y9qP9g2zOONw1rv80QbA==}
+    dependencies:
+      belter: 1.0.190
+      cross-domain-safe-weakmap: 1.0.29
+      cross-domain-utils: 2.0.38
+      universal-serialize: 1.0.10
+      zalgo-promise: 1.0.48
+    dev: false
+
   /postcss/8.4.14:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2098,6 +2159,10 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
+  /universal-serialize/1.0.10:
+    resolution: {integrity: sha512-FdouA4xSFa0fudk1+z5vLWtxZCoC0Q9lKYV3uUdFl7DttNfolmiw2ASr5ddY+/Yz6Isr68u3IqC9XMSwMP+Pow==}
+    dev: false
+
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
@@ -2159,4 +2224,8 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /zalgo-promise/1.0.48:
+    resolution: {integrity: sha512-LLHANmdm53+MucY9aOFIggzYtUdkSBFxUsy4glTTQYNyK6B3uCPWTbfiGvSrEvLojw0mSzyFJ1/RRLv+QMNdzQ==}
     dev: false
